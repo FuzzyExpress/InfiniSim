@@ -1,6 +1,6 @@
 [submodule "InfiniTime"]
 	path = InfiniTime
-	url = ../../InfiniTimeOrg/InfiniTime.git
+	url = https://github.com/FuzzyExpress/Express-InfiniTest/tree/main
 [submodule "lv_drivers"]
 	path = lv_drivers
 	url = ../../lvgl/lv_drivers.git
