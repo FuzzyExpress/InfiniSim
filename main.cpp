@@ -726,6 +726,8 @@ public:
         bleController.Connect();
       } else if (key == 'B') {
         bleController.Disconnect();
+
+
       } else if (key == 'v') {
         if (batteryController.percentRemaining >= 99) {
           batteryController.percentRemaining = 100;
@@ -738,12 +740,31 @@ public:
         } else {
           batteryController.percentRemaining -= 1;
         }
+
+
+      } else if (key == 'f') {
+        if (batteryController.percentRemaining >= 90) {
+          batteryController.percentRemaining = 100;
+        } else {
+          batteryController.percentRemaining += 10;
+        }
+      } else if (key == 'F') {
+        if (batteryController.percentRemaining <= 10) {
+          batteryController.percentRemaining = 0;
+        } else {
+          batteryController.percentRemaining -= 10;
+        }
+
+
       } else if (key == 'c') {
         batteryController.isCharging = true;
         batteryController.isPowerPresent = true;
       } else if (key == 'C') {
         batteryController.isCharging = false;
         batteryController.isPowerPresent = false;
+
+
+
       } else if (key == 'l' && !screen_off_created) {
         brightnessController.Higher();
       } else if (key == 'L' && !screen_off_created) {
