@@ -12,7 +12,7 @@ on:
 
   # Also run this Workflow when a Pull Request is created or updated in the "main" and "develop" Branch
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main ]
 
 # Steps to run for the Workflow
 jobs:
