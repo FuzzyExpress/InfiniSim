@@ -40,8 +40,8 @@ namespace Pinetime {
 
       //static constexpr nrf_saadc_input_t batteryVoltageAdcInput = NRF_SAADC_INPUT_AIN7;
     public:
-      uint16_t voltage = 0;
-      uint8_t percentRemaining = 0;
+      uint16_t voltage = 111;
+      uint8_t percentRemaining = 11;
 
       bool isFull = false;
       bool isCharging = false;
